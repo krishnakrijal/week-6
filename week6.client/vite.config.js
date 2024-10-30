@@ -50,6 +50,10 @@ export default defineConfig({
             '^/stores': {
                 target,
                 secure: false
+            },
+            '^/storeForm': {
+                target,
+                secure:false
             }
         },
         port: 5173,

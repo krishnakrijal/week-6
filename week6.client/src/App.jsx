@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import { Layout } from './Layout';
 import { StoreTable } from './components/stores/StoreTable'
+import StoreForm from './components/storeForm/StoreForm';
 
 function App() {
     const [forecasts, setForecasts] = useState();
@@ -42,6 +42,9 @@ function App() {
 
 
             <StoreTable />
+
+            <p>User to Enter a name of the store and post it</p>
+            <StoreForm/>
 
         </div>
     );
